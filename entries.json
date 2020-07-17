@@ -1,0 +1,100 @@
+{
+  "nextEntryId": 34,
+  "nodes": [
+    {
+      "id": "8",
+      "name": "Models",
+      "type": null,
+      "children": [
+        {
+          "id": "0",
+          "name": "Player",
+          "type": "model"
+        },
+        {
+          "id": "4",
+          "name": "Floor",
+          "type": "cubicModel"
+        },
+        {
+          "id": "17",
+          "name": "Wall",
+          "type": "model"
+        },
+        {
+          "id": "20",
+          "name": "Bed",
+          "type": "model"
+        },
+        {
+          "id": "31",
+          "name": "Car",
+          "type": "model"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Sprites",
+      "type": null,
+      "children": [
+        {
+          "id": "9",
+          "name": "Shadow",
+          "type": "sprite"
+        },
+        {
+          "id": "11",
+          "name": "Floor",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Scenes",
+      "type": null,
+      "children": [
+        {
+          "id": "7",
+          "name": "Main",
+          "type": null,
+          "children": [
+            {
+              "id": "1",
+              "name": "Scene",
+              "type": "scene"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Behaviours",
+      "type": null,
+      "children": [
+        {
+          "id": "2",
+          "name": "PlayerBehaviour",
+          "type": "script"
+        },
+        {
+          "id": "12",
+          "name": "CameraBehaviour",
+          "type": "script"
+        },
+        {
+          "id": "5",
+          "name": "Game",
+          "type": "script"
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "name": "Font",
+      "type": "font"
+    }
+  ]
+}

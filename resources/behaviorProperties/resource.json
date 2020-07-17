@@ -1,0 +1,66 @@
+{
+  "behaviors": {
+    "PlayerBehaviour": {
+      "scriptId": "2",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number"
+        },
+        {
+          "name": "radius",
+          "type": "number"
+        },
+        {
+          "name": "height",
+          "type": "number"
+        },
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "yAngle",
+          "type": "number"
+        },
+        {
+          "name": "direction",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "initialShadowScale",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "shadowScale",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "canJump",
+          "type": "boolean"
+        }
+      ]
+    },
+    "CameraBehaviour": {
+      "scriptId": "12",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "cameraOffset",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "targetPosition",
+          "type": "Sup.Math.Vector3"
+        }
+      ]
+    }
+  }
+}

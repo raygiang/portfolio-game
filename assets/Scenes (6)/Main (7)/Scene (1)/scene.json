@@ -1,0 +1,777 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "6",
+      "name": "Root",
+      "children": [
+        {
+          "id": "0",
+          "name": "Player",
+          "children": [
+            {
+              "id": "3",
+              "name": "Model",
+              "children": [],
+              "components": [
+                {
+                  "type": "ModelRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "modelAssetId": "0",
+                    "animationId": null,
+                    "castShadow": true,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": true,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "4",
+              "name": "Shadow",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "9",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "000000",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 8,
+                "y": 1,
+                "z": 8
+              },
+              "visible": false,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "PlayerBehaviour",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 10,
+                "fixedRotation": true,
+                "group": 1,
+                "mask": 1,
+                "shape": "cylinder",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 3.5,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 90,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 0.5
+                },
+                "radius": 2,
+                "height": 7,
+                "segments": 16
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "1",
+          "name": "Camera",
+          "children": [],
+          "components": [
+            {
+              "type": "Camera",
+              "config": {
+                "formatVersion": 1,
+                "mode": "perspective",
+                "fov": 60,
+                "orthographicScale": 10,
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1,
+                  "height": 1
+                },
+                "depth": 0,
+                "nearClippingPlane": 1,
+                "farClippingPlane": 200
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CameraBehaviour",
+                "propertyValues": {}
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 22,
+            "z": 30
+          },
+          "orientation": {
+            "x": -0.08715574274765817,
+            "y": 0,
+            "z": 0,
+            "w": 0.9961946980917455
+          },
+          "scale": {
+            "x": 1,
+            "y": 0.9999999836615361,
+            "z": 0.9999999836615361
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "14",
+          "name": "Light",
+          "children": [],
+          "components": [
+            {
+              "type": "Light",
+              "config": {
+                "formatVersion": 2,
+                "type": "ambient",
+                "color": "ffffff",
+                "intensity": 15,
+                "distance": 0,
+                "angle": 60,
+                "target": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "castShadow": true,
+                "shadowMapSize": {
+                  "width": 10,
+                  "height": 10
+                },
+                "shadowBias": 0,
+                "shadowCameraNearPlane": 319,
+                "shadowCameraFarPlane": 200,
+                "shadowCameraFov": 50,
+                "shadowCameraSize": {
+                  "top": 150,
+                  "bottom": -25,
+                  "left": -100,
+                  "right": 100
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 50,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "9",
+          "name": "Room",
+          "children": [
+            {
+              "id": "7",
+              "name": "Wall",
+              "children": [
+                {
+                  "id": "15",
+                  "name": "WallText",
+                  "children": [],
+                  "components": [
+                    {
+                      "type": "TextRenderer",
+                      "config": {
+                        "formatVersion": 2,
+                        "fontAssetId": "33",
+                        "text": "Hello, my \nname is\nRaymond!",
+                        "alignment": "center",
+                        "verticalAlignment": "center",
+                        "size": 30,
+                        "color": null,
+                        "overrideOpacity": false,
+                        "opacity": null
+                      },
+                      "id": "0"
+                    }
+                  ],
+                  "position": {
+                    "x": 1.4999999517121978,
+                    "y": 0.25133392291268564,
+                    "z": 0.19999997317790985
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 0.3,
+                    "y": 0.3,
+                    "z": 0.3
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
+                },
+                {
+                  "id": "16",
+                  "name": "Disclaimer",
+                  "children": [],
+                  "components": [
+                    {
+                      "type": "TextRenderer",
+                      "config": {
+                        "formatVersion": 2,
+                        "fontAssetId": "33",
+                        "text": "(Game is currently\nIn Development)",
+                        "alignment": "center",
+                        "verticalAlignment": "center",
+                        "size": 20,
+                        "color": null,
+                        "overrideOpacity": false,
+                        "opacity": null
+                      },
+                      "id": "0"
+                    }
+                  ],
+                  "position": {
+                    "x": 1.5,
+                    "y": -0.7,
+                    "z": 0.2
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 0.2,
+                    "y": 0.2,
+                    "z": 0.2
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
+                }
+              ],
+              "components": [
+                {
+                  "type": "CannonBody",
+                  "config": {
+                    "formatVersion": 2,
+                    "mass": 0,
+                    "fixedRotation": false,
+                    "group": 1,
+                    "mask": 1,
+                    "shape": "box",
+                    "positionOffset": {
+                      "x": 70.5,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "orientationOffset": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "halfSize": {
+                      "x": 70.5,
+                      "y": 20,
+                      "z": 1
+                    },
+                    "radius": 1,
+                    "height": 1,
+                    "segments": 16
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "ModelRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "modelAssetId": "17",
+                    "animationId": null,
+                    "castShadow": true,
+                    "receiveShadow": true,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "3"
+                }
+              ],
+              "position": {
+                "x": -36.8243408203125,
+                "y": 20,
+                "z": -10
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 25,
+                "y": 20,
+                "z": 5
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "2",
+              "name": "Floor",
+              "children": [],
+              "components": [
+                {
+                  "type": "CannonBody",
+                  "config": {
+                    "formatVersion": 2,
+                    "mass": 0,
+                    "fixedRotation": false,
+                    "group": 1,
+                    "mask": 1,
+                    "shape": "box",
+                    "positionOffset": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "orientationOffset": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "halfSize": {
+                      "x": 42,
+                      "y": 15,
+                      "z": 0.5
+                    },
+                    "radius": 1,
+                    "height": 1,
+                    "segments": 16
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "11",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": true,
+                    "receiveShadow": true,
+                    "color": "ffffff",
+                    "overrideOpacity": true,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "2"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0.7071067811865475,
+                "y": 0,
+                "z": 0,
+                "w": 0.7071067811865476
+              },
+              "scale": {
+                "x": 1.25,
+                "y": 1.5,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "10",
+              "name": "Props",
+              "children": [
+                {
+                  "id": "11",
+                  "name": "Bed",
+                  "children": [
+                    {
+                      "id": "12",
+                      "name": "Light",
+                      "children": [],
+                      "components": [
+                        {
+                          "type": "Light",
+                          "config": {
+                            "formatVersion": 2,
+                            "type": "directional",
+                            "color": "ffffff",
+                            "intensity": 100,
+                            "distance": 0,
+                            "angle": 60,
+                            "target": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 0
+                            },
+                            "castShadow": true,
+                            "shadowMapSize": {
+                              "width": 512,
+                              "height": 512
+                            },
+                            "shadowBias": 0,
+                            "shadowCameraNearPlane": 0.1,
+                            "shadowCameraFarPlane": 1000,
+                            "shadowCameraFov": 50,
+                            "shadowCameraSize": {
+                              "top": 100,
+                              "bottom": -100,
+                              "left": -100,
+                              "right": 100
+                            }
+                          },
+                          "id": "0"
+                        }
+                      ],
+                      "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": -20
+                      },
+                      "orientation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                      },
+                      "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                      },
+                      "visible": true,
+                      "layer": 0,
+                      "prefab": null
+                    }
+                  ],
+                  "components": [
+                    {
+                      "type": "ModelRenderer",
+                      "config": {
+                        "formatVersion": 1,
+                        "modelAssetId": "20",
+                        "animationId": "",
+                        "castShadow": true,
+                        "receiveShadow": false,
+                        "color": "ffffff",
+                        "overrideOpacity": false,
+                        "opacity": null,
+                        "materialType": "basic",
+                        "shaderAssetId": null
+                      },
+                      "id": "0"
+                    },
+                    {
+                      "type": "CannonBody",
+                      "config": {
+                        "formatVersion": 2,
+                        "mass": 10,
+                        "fixedRotation": false,
+                        "group": 1,
+                        "mask": 1,
+                        "shape": "box",
+                        "positionOffset": {
+                          "x": 0,
+                          "y": 1,
+                          "z": -2.7
+                        },
+                        "orientationOffset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 0
+                        },
+                        "halfSize": {
+                          "x": 7.5,
+                          "y": 5,
+                          "z": 2
+                        },
+                        "radius": 1,
+                        "height": 1,
+                        "segments": 16
+                      },
+                      "id": "1"
+                    }
+                  ],
+                  "position": {
+                    "x": 20,
+                    "y": 0,
+                    "z": 5
+                  },
+                  "orientation": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": -0.4999999999999999,
+                    "w": 0.5000000000000001
+                  },
+                  "scale": {
+                    "x": 5,
+                    "y": 5,
+                    "z": 5
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
+                },
+                {
+                  "id": "13",
+                  "name": "Car",
+                  "children": [],
+                  "components": [
+                    {
+                      "type": "ModelRenderer",
+                      "config": {
+                        "formatVersion": 1,
+                        "modelAssetId": "31",
+                        "animationId": null,
+                        "castShadow": true,
+                        "receiveShadow": true,
+                        "color": "ffffff",
+                        "overrideOpacity": false,
+                        "opacity": null,
+                        "materialType": "basic",
+                        "shaderAssetId": null
+                      },
+                      "id": "0"
+                    },
+                    {
+                      "type": "CannonBody",
+                      "config": {
+                        "formatVersion": 2,
+                        "mass": 5,
+                        "fixedRotation": false,
+                        "group": 1,
+                        "mask": 1,
+                        "shape": "box",
+                        "positionOffset": {
+                          "x": 0,
+                          "y": 0.6,
+                          "z": 0
+                        },
+                        "orientationOffset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 0
+                        },
+                        "halfSize": {
+                          "x": 1.3,
+                          "y": 0.7,
+                          "z": 1.9
+                        },
+                        "radius": 1,
+                        "height": 1,
+                        "segments": 16
+                      },
+                      "id": "1"
+                    }
+                  ],
+                  "position": {
+                    "x": -10,
+                    "y": 10,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
+                }
+              ],
+              "components": [],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

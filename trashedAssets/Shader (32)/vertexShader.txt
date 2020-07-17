@@ -1,0 +1,45 @@
+varying vec2 vUv;
+varying vec3 worldNormal;
+
+#include <common>
+#include <bsdfs>
+#include <lights_pars>
+#include <skinning_pars_vertex>
+#include <shadowmap_pars_vertex>
+
+varying vec4 vColor;
+
+void main() {
+  vUv = uv;
+  
+  // Hack for auto-repeating wall textures
+  // Walls have their V component > 1
+  if ( vUv.y > 1.0 ){
+    vUv.x *= sqrt(  modelMatrix[0][0]*modelMatrix[0][0] +
+                    modelMatrix[0][1]*modelMatrix[0][1] +
+                    modelMatrix[0][2]*modelMatrix[0][2] ) ;
+  }
+  
+  #include <beginnormal_vertex>
+  #include <skinbase_vertex>
+  #include <skinnormal_vertex>
+    
+  #include <begin_vertex>
+  #include <skinning_vertex>
+  #include <project_vertex>
+    
+  vec4 n;
+  #ifdef USE_SKINNING
+  n = vec4(objectNormal, 0.0);
+  #else
+  n = vec4(normal, 0.0);
+  #endif
+  n = modelMatrix * n;
+  worldNormal = normalize( n ).xyz;
+  
+  #include <worldpos_vertex>
+  #include <shadowmap_vertex>
+  
+//   vColor = vec4(1.0, 1.0, 1.0, 1.0);
+//   vColor.xyz = n.xyz * 0.5 + 0.5;
+}
